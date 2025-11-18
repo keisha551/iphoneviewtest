@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel NZ Tours</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+    }
+
+    /* Header */
+    header {
+      background-color: white;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #85f869;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .login-btn {
+      background-color: #6e716d;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Tour Section */
+    .tour-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .tour-section h2 {
+      font-size: 1.6em;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    .tour-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: nowrap;
+      align-items: stretch;
+    }
+
+    .tour-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 300px;
+      padding: 20px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .tour-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+
+    .tour-card h3 {
+      margin-top: 10px;
+      color: black;
+    }
+
+    .price {
+      font-size: 3em;
+      color: black;
+      margin: 10px 0;
+    }
+
+    .tour-card ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: auto;
+    }
+
+    .tour-card ul li::before {
+      content: "● ";
+      color: black;
+    }
+
+    .tour-card button {
+      background-color: #6e716d;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: white;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #85f869;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: black;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-social img {
+      height: 24px;
+      width: 24px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.8em;
+      color: #b6c1b2;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 1000px) {
+      .tour-container {
+        flex-wrap: wrap;
+      }
+
+      .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .footer-left {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+
+      .footer-social {
+        margin-top: 10px;
+      }
+
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Travel NZ</div>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="tour.html">Tour</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="login-btn">Log In</button>
+  </header>
+
+  <section class="tour-section">
+    <h2>PRICING PLANS FOR TOUR</h2>
+    <div class="tour-container">
+      <div class="tour-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjSYAJEwm2YKxNgvyRTopvu1eSHOzOVSAOiBcIDi4BhwZyEnam" alt="Wellington Tour">
+        <h3>Wellington Tour</h3>
+        <div class="price">$40</div>
+        <ul>
+          <li>Cable Car</li>
+          <li>Botanic Gardens</li>
+          <li>Te Papa Museum</li>
+          <li>And more</li>
+        </ul>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="tour-card">
+        <img src="https://www.benjepatterson.co.nz/wp-content/uploads/2023/06/Ziptrek-10th-Bday-Happy-Zipper-570x350@2x.jpeg" alt="Queenstown Tour">
+        <h3>Queenstown Tour</h3>
+        <div class="price">$99</div>
+        <ul>
+          <li>Skyline Gondola</li>
+          <li>Luge</li>
+          <li>Paragliding</li>
+          <li>And more</li>
+        </ul>
+        <button>BOOK NOW</button>
+      </div>
+      <div class="tour-card">
+        <img src="https://heartofthecity.co.nz/sites/default/files/styles/social_media/public/2019-06/Ferries-in-Auckland-city-centre-1.jpg" alt="Auckland Tour">
+        <h3>Auckland Tour</h3>
+        <div class="price">$65</div>
+        <ul>
+          <li>Downtown Ferry</li>
+          <li>Victoria Road Stores</li>
+          <li>Devonport Cafes</li>
+          <li>And more</li>
+        </ul>
+        <button>BOOK NOW</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="footer-logo">Travel NZ</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">TERMS OF USE</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">FAQS</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 TRAVEL NZ. ALL RIGHTS RESERVED.
+    </div>
+  </footer>
+
+</body>
+</html>
