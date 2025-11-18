@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel NZ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: white;
+    }
+
+    header {
+      background-color: white;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-grow: 1;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #85f869;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-grow: 1;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    .login-btn {
+      background-color: #6e716d;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 2em;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .gallery-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .gallery-section h2 {
+      font-size: 1.6em;
+      margin-bottom: 30px;
+      color: black;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .city-card {
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: left;
+    }
+
+    .city-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    .city-card h3 {
+      margin-top: 10px;
+      color: black;
+    }
+
+    .city-card p {
+      font-size: 0.95em;
+      color: #6e716d;  
+    }
+
+    footer {
+      background-color: white;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+
+    .footer-top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-logo {
+      font-size: 1.8em;
+      font-weight: bold;
+      color: #85f869;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .footer-links a {
+      color: black;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
+
+    .footer-social img {
+      height: 24px;
+      width: 24px;
+      object-fit: contain;
+    }
+
+    .copyright {
+      text-align: center;
+      font-size: 0.8em;
+      color: #b6c1b2;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 800px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      header, .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .nav-left {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer-left {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .footer-links {
+        justify-content: center;
+      }
+
+      .footer-social {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-left">
+      <div class="logo">Travel NZ</div>
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="tour.html">Tour</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <button class="login-btn">Log In</button>
+  </header>
+
+  <div class="hero">
+    <h1>Find your perfect destination with Travel NZ</h1>
+    <p>EXPLORE MANY TOURS AND LET TRAVEL NZ PLAN YOUR TRIP QUICK AND EASY FOR YOU TO ENJOY THE PERFECT HOLIDAY.</p>
+  </div>
+
+  <section class="gallery-section">
+    <h2>NEW ZEALAND GALLERY</h2>
+    <div class="grid-container">
+      <div class="city-card">
+        <img src="https://i.redd.it/c6icxbi5wcyd1.jpeg" alt="Wellington" />
+        <h3>WELLINGTON</h3>
+        <p>A coastal city bursting with creativity and character. From bold flavors to breezy walks, it's a place that inspires.</p>
+      </div>
+      <div class="city-card">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/dc/e6/a1/enjoy-beautiful-views.jpg?w=900&h=500&s=1" alt="Auckland" />
+        <h3>AUCKLAND</h3>
+        <p>A vibrant harbor city where urban energy meets island escapes. From rooftop bars to hidden beaches, adventure is always within reach.</p>
+      </div>
+      <div class="city-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLZ74CRAOgcncS8gAHIhLTtyg_8GTmjtDW9Pnop_WYmmpSagWn" alt="Queenstown" />
+        <h3>QUEENSTOWN</h3>
+        <p>A breathtaking alpine town where adventure meets elegance. From snow-capped peaks to luxury villas, every moment feels cinematic.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="footer-logo">Travel NZ</div>
+      </div>
+      <div class="footer-links">
+        <a href="#">TERMS OF USE</a>
+        <a href="#">PRIVACY POLICY</a>
+        <a href="#">FAQ</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Facebook_logo_%28square%29.png/960px-Facebook_logo_%28square%29.png" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1200px-Instagram_icon.png" alt="Instagram" />
+        </a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 TRAVEL NZ. ALL RIGHTS RESERVED.
+    </div>
+  </footer>
+</body>
+</html>
